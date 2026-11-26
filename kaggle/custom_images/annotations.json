@@ -1,0 +1,5 @@
+[
+ {"file":"buffalo1.jpg","class":"buffalo","box":[205,150,730,568]},
+ {"file":"elephant1.jpg","class":"elephant","box":[335,88,682,600]},
+ {"file":"elephant1.jpg","class":"elephant","box":[670,370,800,562]}
+]
