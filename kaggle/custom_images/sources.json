@@ -1,2 +1,6 @@
 {"buffalo1.jpg":{"title":"File:African Buffalo.JPG","license":"CC BY 2.5","site":"commons.wikimedia.org"},
- "elephant1.jpg":{"title":"File:African bush elephants (Loxodonta africana) female with six-week-old baby.jpg","license":"CC BY-SA 4.0","site":"commons.wikimedia.org"}}
+ "elephant1.jpg":{"title":"File:African bush elephants (Loxodonta africana) female with six-week-old baby.jpg","license":"CC BY-SA 4.0","site":"commons.wikimedia.org"},
+ "rhino1.jpg":{"title":"Open Images (via Kaggle antoreepjana/animals-detection-images-dataset) test/Rhinoceros/561c4dccbbfb86f1.jpg","license":"CC BY 2.0 (Open Images)","site":"kaggle.com"},
+ "rhino2.jpg":{"title":"Open Images (via Kaggle antoreepjana/animals-detection-images-dataset) test/Rhinoceros/2e3a7f4b6057b388.jpg","license":"CC BY 2.0 (Open Images)","site":"kaggle.com"},
+ "zebra1.jpg":{"title":"Open Images (via Kaggle antoreepjana/animals-detection-images-dataset) test/Zebra/099f5af7592c9fcc.jpg","license":"CC BY 2.0 (Open Images)","site":"kaggle.com"},
+ "zebra2.jpg":{"title":"Open Images (via Kaggle antoreepjana/animals-detection-images-dataset) test/Zebra/02e850bb904d9467.jpg","license":"CC BY 2.0 (Open Images)","site":"kaggle.com"}}

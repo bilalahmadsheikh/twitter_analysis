@@ -1,5 +1,11 @@
 [
  {"file":"buffalo1.jpg","class":"buffalo","box":[205,150,730,568]},
  {"file":"elephant1.jpg","class":"elephant","box":[335,88,682,600]},
- {"file":"elephant1.jpg","class":"elephant","box":[670,370,800,562]}
+ {"file":"elephant1.jpg","class":"elephant","box":[670,370,800,562]},
+ {"file":"rhino1.jpg","class":"rhino","box":[130,118,585,585]},
+ {"file":"rhino1.jpg","class":"rhino","box":[678,222,890,562]},
+ {"file":"rhino2.jpg","class":"rhino","box":[160,55,840,685]},
+ {"file":"zebra1.jpg","class":"zebra","box":[118,425,335,550]},
+ {"file":"zebra1.jpg","class":"zebra","box":[368,420,548,545]},
+ {"file":"zebra2.jpg","class":"zebra","box":[148,225,660,585]}
 ]
