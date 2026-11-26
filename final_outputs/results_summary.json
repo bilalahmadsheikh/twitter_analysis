@@ -1,0 +1,335 @@
+{
+  "task": "Object detection with YOLOv11",
+  "model": "yolo11s (COCO-pretrained, fine-tuned)",
+  "dataset": "Wildlife YOLO-format (buffalo, elephant, rhino, zebra) - Kaggle ankanghosh651",
+  "classes": [
+    "buffalo",
+    "elephant",
+    "rhino",
+    "zebra"
+  ],
+  "ultralytics": "8.4.219",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "smoke_run": false,
+  "params_M": 9.46,
+  "GFLOPs": 21.8,
+  "layers": 181,
+  "train": {
+    "epochs_requested": 30,
+    "epochs_run": 30,
+    "best_epoch": 30,
+    "imgsz": 640,
+    "batch": 16,
+    "train_minutes": 9.1
+  },
+  "dataset_audit": [
+    {
+      "split": "train",
+      "images": 1203,
+      "boxes": 2157,
+      "boxes/img": 1.79,
+      "background_imgs": 0,
+      "invalid_lines": 0,
+      "median_WxH": "640x480",
+      "n_buffalo": 447,
+      "n_elephant": 603,
+      "n_rhino": 445,
+      "n_zebra": 662
+    },
+    {
+      "split": "val",
+      "images": 150,
+      "boxes": 262,
+      "boxes/img": 1.75,
+      "background_imgs": 0,
+      "invalid_lines": 0,
+      "median_WxH": "640x480",
+      "n_buffalo": 60,
+      "n_elephant": 83,
+      "n_rhino": 58,
+      "n_zebra": 61
+    },
+    {
+      "split": "test",
+      "images": 151,
+      "boxes": 266,
+      "boxes/img": 1.76,
+      "background_imgs": 0,
+      "invalid_lines": 0,
+      "median_WxH": "640x480",
+      "n_buffalo": 44,
+      "n_elephant": 62,
+      "n_rhino": 60,
+      "n_zebra": 100
+    }
+  ],
+  "val": {
+    "split": "val",
+    "precision": 0.9609938962378723,
+    "recall": 0.9297379509847418,
+    "mAP@0.5": 0.9608267773913621,
+    "mAP@0.75": 0.8992925233944511,
+    "mAP@0.5:0.95": 0.8286917027394983,
+    "F1": 0.9451075754708498,
+    "speed_ms": {
+      "preprocess": 0.7836050733324859,
+      "inference": 8.542972373334882,
+      "loss": 0.0008389399992362693,
+      "postprocess": 1.3991875800002163
+    }
+  },
+  "test": {
+    "split": "test",
+    "precision": 0.9542221787071975,
+    "recall": 0.8609401754658885,
+    "mAP@0.5": 0.9401556304823275,
+    "mAP@0.75": 0.8670955051931459,
+    "mAP@0.5:0.95": 0.8043601240930869,
+    "F1": 0.9051842752037151,
+    "speed_ms": {
+      "preprocess": 0.83367166887501,
+      "inference": 8.022486172185442,
+      "loss": 0.0007096887413161385,
+      "postprocess": 0.8501068278131104
+    }
+  },
+  "per_class_test": [
+    {
+      "class": "buffalo",
+      "precision": 0.9471,
+      "recall": 0.7955,
+      "AP@0.5": 0.9294,
+      "AP@0.5:0.95": 0.8427
+    },
+    {
+      "class": "elephant",
+      "precision": 0.9452,
+      "recall": 0.835,
+      "AP@0.5": 0.9075,
+      "AP@0.5:0.95": 0.733
+    },
+    {
+      "class": "rhino",
+      "precision": 0.9538,
+      "recall": 0.9333,
+      "AP@0.5": 0.9618,
+      "AP@0.5:0.95": 0.8428
+    },
+    {
+      "class": "zebra",
+      "precision": 0.9708,
+      "recall": 0.88,
+      "AP@0.5": 0.9619,
+      "AP@0.5:0.95": 0.799
+    }
+  ],
+  "per_class_val": [
+    {
+      "class": "buffalo",
+      "precision": 0.9653,
+      "recall": 0.9267,
+      "AP@0.5": 0.9238,
+      "AP@0.5:0.95": 0.825
+    },
+    {
+      "class": "elephant",
+      "precision": 0.9268,
+      "recall": 0.9398,
+      "AP@0.5": 0.9806,
+      "AP@0.5:0.95": 0.8008
+    },
+    {
+      "class": "rhino",
+      "precision": 0.9997,
+      "recall": 1.0,
+      "AP@0.5": 1.0,
+      "AP@0.5:0.95": 0.9089
+    },
+    {
+      "class": "zebra",
+      "precision": 0.9522,
+      "recall": 0.8525,
+      "AP@0.5": 0.9389,
+      "AP@0.5:0.95": 0.7801
+    }
+  ],
+  "iou_analysis_test": {
+    "TP": 245,
+    "FP": 36,
+    "FN": 21,
+    "precision": 0.8718861209964412,
+    "recall": 0.9210526315789473,
+    "F1": 0.8957952468007312,
+    "mean_IoU_TP": 0.9074151515960693,
+    "mean_best_IoU_per_GT": 0.8524359471507763
+  },
+  "inference_speed": [
+    {
+      "device": "Tesla T4",
+      "imgsz": 320,
+      "precision": "FP32",
+      "batch": 1,
+      "mean_ms": 11.221,
+      "std_ms": 0.901,
+      "p95_ms": 13.222,
+      "FPS": 89.121
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 320,
+      "precision": "FP16",
+      "batch": 1,
+      "mean_ms": 11.723,
+      "std_ms": 0.454,
+      "p95_ms": 12.373,
+      "FPS": 85.301
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 640,
+      "precision": "FP32",
+      "batch": 1,
+      "mean_ms": 11.429,
+      "std_ms": 0.336,
+      "p95_ms": 12.237,
+      "FPS": 87.499
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 640,
+      "precision": "FP16",
+      "batch": 1,
+      "mean_ms": 13.221,
+      "std_ms": 0.537,
+      "p95_ms": 14.213,
+      "FPS": 75.636
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 960,
+      "precision": "FP32",
+      "batch": 1,
+      "mean_ms": 20.137,
+      "std_ms": 0.251,
+      "p95_ms": 20.621,
+      "FPS": 49.659
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 960,
+      "precision": "FP16",
+      "batch": 1,
+      "mean_ms": 13.803,
+      "std_ms": 0.852,
+      "p95_ms": 15.523,
+      "FPS": 72.448
+    },
+    {
+      "device": "Tesla T4",
+      "imgsz": 640,
+      "precision": "FP16",
+      "batch": 16,
+      "mean_ms": 6.449,
+      "std_ms": 0.055,
+      "p95_ms": null,
+      "FPS": 155.067
+    },
+    {
+      "device": "CPU",
+      "imgsz": 640,
+      "precision": "FP32",
+      "batch": 1,
+      "mean_ms": 113.155,
+      "std_ms": 2.925,
+      "p95_ms": 117.753,
+      "FPS": 8.837
+    }
+  ],
+  "robustness": [
+    {
+      "condition": "clean",
+      "TP": 245,
+      "FP": 36,
+      "FN": 21,
+      "precision": 0.8719,
+      "recall": 0.9211,
+      "F1": 0.8958,
+      "mean_IoU_TP": 0.9074,
+      "mean_best_IoU_per_GT": 0.8524
+    },
+    {
+      "condition": "darker (x0.45)",
+      "TP": 244,
+      "FP": 27,
+      "FN": 22,
+      "precision": 0.9004,
+      "recall": 0.9173,
+      "F1": 0.9088,
+      "mean_IoU_TP": 0.9108,
+      "mean_best_IoU_per_GT": 0.847
+    },
+    {
+      "condition": "gaussian blur (sigma=4)",
+      "TP": 173,
+      "FP": 32,
+      "FN": 93,
+      "precision": 0.8439,
+      "recall": 0.6504,
+      "F1": 0.7346,
+      "mean_IoU_TP": 0.8916,
+      "mean_best_IoU_per_GT": 0.6046
+    },
+    {
+      "condition": "noise (sd=25)",
+      "TP": 200,
+      "FP": 48,
+      "FN": 66,
+      "precision": 0.8065,
+      "recall": 0.7519,
+      "F1": 0.7782,
+      "mean_IoU_TP": 0.8871,
+      "mean_best_IoU_per_GT": 0.6968
+    },
+    {
+      "condition": "JPEG q=10",
+      "TP": 213,
+      "FP": 43,
+      "FN": 53,
+      "precision": 0.832,
+      "recall": 0.8008,
+      "F1": 0.8161,
+      "mean_IoU_TP": 0.8781,
+      "mean_best_IoU_per_GT": 0.723
+    }
+  ],
+  "custom_images": {
+    "n_images": 6,
+    "n_objects": 9,
+    "precision": 0.9795075570216061,
+    "recall": 1.0,
+    "mAP@0.5": 1.0,
+    "mAP@0.5:0.95": 0.9207920792079207,
+    "@conf0.25_TP": 9,
+    "@conf0.25_FP": 0,
+    "@conf0.25_FN": 0,
+    "@conf0.25_precision": 1.0,
+    "@conf0.25_recall": 1.0,
+    "@conf0.25_F1": 1.0,
+    "@conf0.25_mean_IoU_TP": 0.9522334337234497,
+    "@conf0.25_mean_best_IoU_per_GT": 0.9522334337234497
+  },
+  "live_prediction": {
+    "frames": 720,
+    "avg_latency_ms": 13.707444408335492,
+    "p95_latency_ms": 15.073358049994567,
+    "avg_FPS_end_to_end": 43.86305242380518,
+    "mean_detections_per_frame": 1.3625
+  },
+  "onnx": {
+    "path": "/kaggle/working/runs/yolo11s_wildlife/weights/best.onnx",
+    "size_MB": 37.9,
+    "detections_onnx_cpu": 1,
+    "detections_pt_same_image": 1
+  }
+}

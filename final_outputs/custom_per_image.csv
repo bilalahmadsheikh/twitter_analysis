@@ -1,0 +1,7 @@
+path,tp,fp,fn,n_gt,image
+/kaggle/working/custom/images/buffalo1.jpg,1,0,0,1,buffalo1.jpg
+/kaggle/working/custom/images/elephant1.jpg,2,0,0,2,elephant1.jpg
+/kaggle/working/custom/images/rhino1.jpg,2,0,0,2,rhino1.jpg
+/kaggle/working/custom/images/rhino2.jpg,1,0,0,1,rhino2.jpg
+/kaggle/working/custom/images/zebra1.jpg,2,0,0,2,zebra1.jpg
+/kaggle/working/custom/images/zebra2.jpg,1,0,0,1,zebra2.jpg

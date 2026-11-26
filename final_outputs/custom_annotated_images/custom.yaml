@@ -1,0 +1,10 @@
+names:
+  0: buffalo
+  1: elephant
+  2: rhino
+  3: zebra
+nc: 4
+path: /kaggle/working/custom
+test: images
+train: images
+val: images

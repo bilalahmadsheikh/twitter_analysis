@@ -1,0 +1,25 @@
+idx,type,from,params,stage
+0,Conv,-1,928,backbone
+1,Conv,-1,18560,backbone
+2,C3k2,-1,26080,backbone
+3,Conv,-1,147712,backbone
+4,C3k2,-1,103360,backbone
+5,Conv,-1,590336,backbone
+6,C3k2,-1,346112,backbone
+7,Conv,-1,1180672,backbone
+8,C3k2,-1,1380352,backbone
+9,SPPF,-1,656896,backbone
+10,C2PSA,-1,990976,backbone
+11,Upsample,-1,0,neck
+12,Concat,"[-1, 6]",0,neck
+13,C3k2,-1,443776,neck
+14,Upsample,-1,0,neck
+15,Concat,"[-1, 4]",0,neck
+16,C3k2,-1,127680,neck
+17,Conv,-1,147712,neck
+18,Concat,"[-1, 13]",0,neck
+19,C3k2,-1,345472,neck
+20,Conv,-1,590336,neck
+21,Concat,"[-1, 10]",0,neck
+22,C3k2,-1,1511424,neck
+23,Detect,"[16, 19, 22]",850368,head

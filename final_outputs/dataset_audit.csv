@@ -1,0 +1,4 @@
+split,images,boxes,boxes/img,background_imgs,invalid_lines,median_WxH,n_buffalo,n_elephant,n_rhino,n_zebra
+train,1203,2157,1.79,0,0,640x480,447,603,445,662
+val,150,262,1.75,0,0,640x480,60,83,58,61
+test,151,266,1.76,0,0,640x480,44,62,60,100

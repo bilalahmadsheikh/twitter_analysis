@@ -1,0 +1,6 @@
+variant,layers,params_M,GFLOPs@640
+yolo11n,181,2.62,6.7
+yolo11s,181,9.46,21.8
+yolo11m,231,20.11,68.6
+yolo11l,357,25.37,87.9
+yolo11x,357,56.97,196.3
